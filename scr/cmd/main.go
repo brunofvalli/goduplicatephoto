@@ -48,10 +48,10 @@ func main() {
 
 	// Create detector and run analysis
 	config := &detector.Config{
-		InputDir:     *inputDir,
-		OutputDir:    *outputDir,
+		InputDir:      *inputDir,
+		OutputDir:     *outputDir,
 		ThumbnailSize: *thumbSize,
-		Verbose:      *verbose,
+		Verbose:       *verbose,
 	}
 
 	detector := detector.NewDuplicateDetector(config)

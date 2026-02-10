@@ -28,9 +28,9 @@ type Stats struct {
 
 // DuplicateDetector handles the detection of duplicate photos
 type DuplicateDetector struct {
-	config    *Config
-	sigs      map[string][]string // signature -> list of file paths
-	mu        sync.Mutex
+	config *Config
+	sigs   map[string][]string // signature -> list of file paths
+	mu     sync.Mutex
 }
 
 // NewDuplicateDetector creates a new duplicate detector

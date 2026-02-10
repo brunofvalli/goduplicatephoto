@@ -86,9 +86,9 @@ func GetImageDimensions(filePath string) (int, int, error) {
 // Files with higher resolution come first
 func SortByResolution(filePaths []string) ([]string, error) {
 	type fileInfo struct {
-		path     string
-		width    int
-		height   int
+		path       string
+		width      int
+		height     int
 		megapixels float64
 	}
 
